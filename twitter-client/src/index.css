@@ -1,0 +1,41 @@
+@import "./fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root,
+:root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#link-item {
+  font-family: "TwitterChirp", sans-serif;
+  font-size: 20px ;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#link-item.active{
+  font-weight: 700;
+  color : #1d9bf0
+}
+
+.main-section::-webkit-scrollbar{
+    width: 0px;
+}
