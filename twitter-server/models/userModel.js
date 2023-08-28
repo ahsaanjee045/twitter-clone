@@ -29,36 +29,14 @@ const userSchema = new mongoose.Schema(
     },
     followers: [
       {
-        user_id: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "User",
-          required: true,
-        },
-        username: {
-          type: String,
-          required: true,
-        },
-        email: {
-          type: String,
-          required: true,
-        },
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
       },
     ],
     followings: [
       {
-        user_id: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "User",
-          required: true,
-        },
-        username: {
-          type: String,
-          required: true,
-        },
-        email: {
-          type: String,
-          required: true,
-        },
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
       },
     ],
   },

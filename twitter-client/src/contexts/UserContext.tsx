@@ -3,6 +3,7 @@ import { loginSchema, registerSchema } from "../schemas/schemas";
 import { toast } from "react-hot-toast";
 
 import axios from "axios";
+import { User } from "src/types/types.t";
 
 type UserContextData = {
   login: (email: string, password: string) => void;
@@ -18,20 +19,7 @@ type UserContextData = {
   logout: () => void;
 };
 
-type User = {
-  _id: string;
-  username: string;
-  email: string;
-  profilePicture: string;
-  displayName: string;
-  bio: string;
-  followers: [];
-  followings: [];
-  __v: 0;
-  token: string;
-  createdAt: string;
-  updatedAt: string;
-};
+
 
 const UserContext = createContext<UserContextData | null>(null);
 

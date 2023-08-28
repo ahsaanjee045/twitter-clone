@@ -11,7 +11,7 @@ import { useUserContext } from "./contexts/UserContext";
 
 function App() {
   const userContext = useUserContext();
-  console.log(userContext?.user);
+  
 
   return (
     <div className="h-full">

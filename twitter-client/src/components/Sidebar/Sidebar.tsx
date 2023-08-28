@@ -20,7 +20,7 @@ const Sidebar = () => {
       {
         icon: FaUserFriends,
         to: "/friends",
-        label: "Friend List",
+        label: "Peoples",
         active: pathname === "/friends",
       },
       {
